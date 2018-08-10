@@ -48,7 +48,7 @@ class ChargeCustomers extends Command
             'event' => 'Charge Customers Schedule',
         ]);
 
-        $secretKey = 'sk_live_a36687896d52aa5ec980ae75f8cff2b2448fd245';
+        $secretKey = 'sk_live_4175db16dd4e71df6b2ab06f4be5b53aeb08b644';
         foreach (Customer::where([
                                     ['due_date', '<', Carbon::now()],
                                     ['charge_status', '=', false]
